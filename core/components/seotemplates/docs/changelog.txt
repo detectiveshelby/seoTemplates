@@ -1,5 +1,9 @@
 Changelog for seoTemplates.
 
+1.0.4-beta
+==============
+- Fixed a bug with 0 value
+
 1.0.3-beta
 ==============
 - Fixed a bug with templates list

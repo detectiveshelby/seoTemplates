@@ -4,23 +4,27 @@ $xpdo_meta_map['seoTemplatesItem']= array (
   'version' => '1.1',
   'table' => 'seotemplates_items',
   'extends' => 'xPDOSimpleObject',
-  'fields' => 
+  'tableMeta' =>
+  array (
+    'engine' => 'InnoDB',
+  ),
+  'fields' =>
   array (
     'template' => '',
     'field' => '',
     'value' => '',
     'active' => 1,
   ),
-  'fieldMeta' => 
+  'fieldMeta' =>
   array (
-    'template' => 
+    'template' =>
     array (
       'dbtype' => 'text',
       'phptype' => 'json',
       'null' => true,
       'default' => '',
     ),
-    'field' => 
+    'field' =>
     array (
       'dbtype' => 'varchar',
       'precision' => '255',
@@ -28,14 +32,14 @@ $xpdo_meta_map['seoTemplatesItem']= array (
       'null' => true,
       'default' => '',
     ),
-    'value' => 
+    'value' =>
     array (
       'dbtype' => 'text',
-      'phptype' => 'text',
+      'phptype' => 'string',
       'null' => true,
       'default' => '',
     ),
-    'active' => 
+    'active' =>
     array (
       'dbtype' => 'tinyint',
       'precision' => '1',
@@ -44,17 +48,17 @@ $xpdo_meta_map['seoTemplatesItem']= array (
       'default' => 1,
     ),
   ),
-  'indexes' => 
+  'indexes' =>
   array (
-    'active' => 
+    'active' =>
     array (
       'alias' => 'active',
       'primary' => false,
       'unique' => false,
       'type' => 'BTREE',
-      'columns' => 
+      'columns' =>
       array (
-        'active' => 
+        'active' =>
         array (
           'length' => '',
           'collation' => 'A',
